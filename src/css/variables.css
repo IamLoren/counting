@@ -1,0 +1,50 @@
+:root {
+  --primary-text: #2f2f2f;
+  --secondary-text: #407bff;
+  --white-text: #ffffff;
+  --accent-text: #ff9d43;
+  --percentage-text: #9ebbff;
+  --error-text: #ef5050;
+  --card-bg-color: #ecf2ff;
+  --accent-bg-color: #d7e3ff;
+  --tooltip-bg-color: #fff;
+  --greeting-bg-color: rgba(249, 250, 251, 0.9);
+  --bcgclr: #ffffff;
+  --tabs-color: #ffffff;
+  --btn-linear: linear-gradient(
+    to right,
+    #9ebbff 0%,
+    #0072ff 51%,
+    #9ebbff 100%
+  );
+  --btn-bg-color: #407bff;
+  --btn-text-color: #ffffff;
+  --accent-color: #3470ff;
+  --modal-btn-bg: #407bff;
+  --modal-btn-color: #ffffff;
+}
+
+.dark {
+  --primary-text: rgb(204, 203, 249);
+  --secondary-text: #ffffff;
+  --white-text: #071239;
+  --accent-text: #ff9d43;
+  --percentage-text: #9ebbff;
+  --card-bg-color: #092469;
+  --accent-bg-color: #574bff;
+  --tooltip-bg-color: #6e92ff;
+  --bcgclr: #172240;
+  --greeting-bg-color: rgba(75, 108, 183, 0.7);
+  --tabs-color: rgb(204, 203, 249);
+  --btn-linear: linear-gradient(
+    to right,
+    #4b6cb7 0%,
+    #182848 51%,
+    #4b6cb7 100%
+  );
+  --btn-bg-color: #071239;
+  --btn-text-color: rgb(204, 203, 249);
+
+  --modal-btn-bg: #574bff;
+  --modal-btn-color: #ffffff;
+}
