@@ -25,7 +25,7 @@ export const StyledForm = styled.form`
 
 export const StyledDiv = styled.div`
   position: relative;
-  width: 300px;
+  width: 351px;
   margin: 0 auto 100px;
   cursor: pointer;
 
@@ -52,8 +52,8 @@ export const StyledInput = styled.input`
   position: absolute;
   top: 0;
   left: 0;
-  width: 300px;
-  height: 50px;
+  width: 351px;
+  height: 88px;
   margin: 0 auto;
   opacity: 0;
 `;
