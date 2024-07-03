@@ -1,5 +1,5 @@
 import React from 'react'
-import { OutputWrapper, Paragraph, firstPar, fourthPar, secondPar, thirdPar} from './Output.styled.js'
+import { OutputWrapper, Paragraph} from './Output.styled.js'
 
 const Output = ({data}) => {
   

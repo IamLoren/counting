@@ -1,4 +1,4 @@
-import styled, {keyframes, css} from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 
 const paragrafsQueue = keyframes`
   0% {
@@ -21,15 +21,20 @@ const paragrafsQueue = keyframes`
 `;
 
 export const OutputWrapper = styled.div`
-    width: 700px;
-    height: 300px;
-    margin: 0 auto;
-`
+  width: 700px;
+  height: 300px;
+  margin: 0 auto;
+`;
 
 export const Paragraph = styled.p`
-transform: translateY(150px);
-opacity: 0;
-text-align: center;
-animation: ${({ delay }) => css`${paragrafsQueue} 10s ease-out ${delay}s forwards`};
+  font-size: 30px;
+  font-weight: 900;
+  color: gray;
+  transform: translateY(150px);
+  opacity: 0;
+  text-align: center;
+  animation: ${({ delay }) =>
+    css`
+      ${paragrafsQueue} 5s ease-out ${delay}s forwards
+    `};
 `;
-   

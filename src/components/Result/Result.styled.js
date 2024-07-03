@@ -1,20 +1,5 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import '../../css/variables.css';
-
-const fadeOut = keyframes`
-  0% {
-    opacity: 1;
-    display: visible;
-  }
-  90% {
-    opacity: 1;
-    display: visible;
-  }
-    100% {
-        opacity: 0;
-        display:none;
-    }
-`;
 
 export const StyledGreeting = styled.div`
   position: fixed;
@@ -31,7 +16,6 @@ export const StyledGreeting = styled.div`
   align-items: center;
   gap: 50px;
   background-color: var(--greeting-bg-color);
-  animation: ${fadeOut} 15s ease-out forwards;
 
   @media screen and (min-width: 1440px) {
     gap: 100px;
@@ -61,11 +45,3 @@ export const StyledGreetingTitle = styled.h1`
   }
 `;
 
-export const StyledGreetingText = styled.h2`
-  font-size: 36px;
-  color: var(--secondary-text);
-  text-align: center;
-  @media screen and (min-width: 767px) {
-    font-size: 48px;
-  }
-`;

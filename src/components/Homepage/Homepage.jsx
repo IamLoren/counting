@@ -10,7 +10,8 @@ const Homepage = () => {
   const [file, setFile] = useState(null);
   const [message, setMessage] = useState("Почекайте закінчення обробки Вашого файлу");
   const [data, setData] = useState(null);
-  const [isModal, setIsModal] = useState(false)
+  const [isModal, setIsModal] = useState(false);
+
 
   const handleFileChange = () => {
     if (ref.current.files.length > 0) {
@@ -36,6 +37,7 @@ const Homepage = () => {
 
       setData(response.data);
       setMessage(response.data.message);
+      setIsModal(false);
     } catch (error) {
       console.error("Error uploading file:", error);
       setMessage("Error uploading file.");
@@ -45,7 +47,7 @@ const Homepage = () => {
   return (
     <Container>
       <StyledTitle>
-        Завантажте документ, який містить набір чисел, у форматі .txt, та
+        Завантажте документ у форматі .txt, який містить набір чисел, та
         дізнайтеся найбільше число списку, найменше, медіану та середнє
         арифметичне!
       </StyledTitle>

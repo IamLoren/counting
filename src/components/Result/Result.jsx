@@ -4,14 +4,12 @@ import 'react-circular-progressbar/dist/styles.css';
 import Confetti from 'react-confetti';
 import {
   StyledGreeting,
-  StyledGreetingText,
   StyledGreetingTitle,
   StyledGreetingWrapper,
 } from './Result.styled';
-import Output from '../Output/Output';
 
 export const Result = ({ progress, message, setModal, data }) => {
-  const [percents, setPercents] = useState(20);
+  const [percents, setPercents] = useState(1);
   const width = window.innerWidth - 5;
   const height = window.innerHeight - 50;
 
@@ -22,7 +20,7 @@ export const Result = ({ progress, message, setModal, data }) => {
       } else {
         clearInterval(intervalId);
       }
-    }, 60);
+    }, 200);
     return () => clearInterval(intervalId);
   }, [percents, progress]);
 
@@ -56,8 +54,6 @@ export const Result = ({ progress, message, setModal, data }) => {
           })}
         />
       </StyledGreetingWrapper>
-      {data && <Output data={data}/>}
-      {data && <StyledGreetingText>Слава Ісусу Христу спрацювало! &#128512;</StyledGreetingText>}
     </StyledGreeting>
   );
 };

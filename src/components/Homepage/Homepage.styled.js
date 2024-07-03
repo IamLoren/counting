@@ -63,6 +63,7 @@ export const StyledButton = styled.button`
   display: block;
   margin: -50px auto 0;
   background-color: var(--accent-color);
+  font-size: 25px;
     color: white;
     padding: 15px 100px;
     border: none;
@@ -76,8 +77,9 @@ export const StyledButton = styled.button`
 
 export const StyledFileName = styled.p`
     position: absolute;
-    top: 25%;
-    left: 43%;
+    top: 35%;
+    left: 44%;
+    width: 200px;
     text-align: center;
     color: red;
 `
@@ -87,6 +89,7 @@ display: block;
   margin: 0 auto 50px;
   background-color: var(--accent-text);
     color: white;
+    font-size: 25px;
     padding: 15px 100px;
     border: none;
     border-radius: 12px;
@@ -97,4 +100,5 @@ display: block;
 
 export const StyledMessage = styled.p`
     text-align: center;
+    font-size: 30px;
 `
