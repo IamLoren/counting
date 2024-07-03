@@ -14,7 +14,6 @@ export const StyledContainer = styled.div`
 
   @media only screen and (min-width: 1440px) {
     width: 1440px;
-    padding-top: 50px;
     padding-left: 112px;
     padding-right: 112px;
   }
