@@ -11,11 +11,13 @@ const Homepage = () => {
   const [message, setMessage] = useState("Почекайте закінчення обробки Вашого файлу");
   const [data, setData] = useState(null);
   const [isModal, setIsModal] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(true);
 
 
   const handleFileChange = () => {
     if (ref.current.files.length > 0) {
       setFile(ref.current.files[0]);
+      setIsDisabled(false);
     }
     setData(null);
     setMessage("Почекайте закінчення обробки Вашого файлу")
@@ -59,7 +61,7 @@ const Homepage = () => {
       </StyledButton>
         </StyledDiv>
        {file && <StyledFileName>Обрано файл {file.name}</StyledFileName>}
-        <SendButton type='submit'>Відправити нашим геніям математики</SendButton>
+        <SendButton type='submit' disabled={isDisabled}>Відправити нашим геніям математики</SendButton>
       </StyledForm>
      <StyledMessage>{data?.message}</StyledMessage>
     {data && <Output data={data}/>}
