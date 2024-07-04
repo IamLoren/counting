@@ -99,4 +99,5 @@ export const SendButton = styled.button`
 export const StyledMessage = styled.p`
   text-align: center;
   font-size: 30px;
+  margin-bottom:0;
 `;
