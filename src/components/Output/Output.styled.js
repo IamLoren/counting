@@ -24,6 +24,7 @@ export const OutputWrapper = styled.div`
   width: 700px;
   height: 300px;
   margin: 0 auto;
+  overflow: hidden;
 `;
 
 export const Paragraph = styled.p`
