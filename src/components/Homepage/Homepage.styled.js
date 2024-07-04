@@ -26,7 +26,7 @@ export const StyledForm = styled.form`
 export const StyledDiv = styled.div`
   position: relative;
   width: 351px;
-  margin: 0 auto 100px;
+  margin: 0 auto 80px;
   cursor: pointer;
 
   &:before {
