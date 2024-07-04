@@ -8,7 +8,7 @@ import {
   StyledGreetingWrapper,
 } from './Result.styled';
 
-export const Result = ({ progress, message, setModal, data }) => {
+export const Result = ({ progress, message}) => {
   const [percents, setPercents] = useState(1);
   const width = window.innerWidth - 5;
   const height = window.innerHeight - 50;
@@ -23,14 +23,6 @@ export const Result = ({ progress, message, setModal, data }) => {
     }, 200);
     return () => clearInterval(intervalId);
   }, [percents, progress]);
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setModal(false);
-    }, 20000);
-    return () => clearTimeout(timeoutId);
-  }, [setModal]);
-
 
   return (
     <StyledGreeting>

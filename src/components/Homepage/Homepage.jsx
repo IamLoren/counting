@@ -65,7 +65,7 @@ const Homepage = () => {
       </StyledForm>
      <StyledMessage>{data?.message}</StyledMessage>
     {data && <Output data={data}/>}
-     {isModal && <Result message={message} progress={100} setModal={setIsModal} data={data}></Result>}
+     {isModal && <Result message={message} progress={100}></Result>}
     </Container>
   );
 };
